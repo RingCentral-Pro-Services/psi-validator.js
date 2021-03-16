@@ -17,17 +17,8 @@ class Validator {
      * @returns true, or rejection that includes the original element, and an array of errors for it
      */
     validate(element: any): Promise<boolean> {
-        let errors: any[] = []
-
-        return new Promise((resolve, reject) => {
-            if (errors.length > 0) {
-                reject({
-                    originalElement: element,
-                    errors: errors
-                })
-            } else {
-                resolve(true)
-            }
+        return new Promise((resolve) => {
+            resolve(true);
         })
     };
 
@@ -44,11 +35,8 @@ class Validator {
             await this
                 .validate(element)
                 .then(res => {
-                    returnArray.push(res)
-                })
-                .catch(e => {
-                    returnArray.push(e)
-                })
+                    returnArray.push(res);
+                });
         };
 
         return new Promise((resolve) => {
