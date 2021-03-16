@@ -31,8 +31,7 @@ class Validator {
         let returnArray: any[] = [];
 
         for (let element of array) {
-            await this
-                .validate(element)
+            await this.validate(element)
                 .then(res => {
                     returnArray.push(res);
                 });
