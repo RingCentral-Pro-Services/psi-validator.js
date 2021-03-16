@@ -1,16 +1,17 @@
 import Validator from './validator';
+import numbers from '../lib/numbers';
 
 class PinValidator extends Validator {
-    sequentialRegex;
-    repeatingRegex;
+    sequentialNumbersRegex;
+    repeatingNumbersRegex;
     numbersOnlyRegex;
 
     constructor() {
         super();
-        this.sequentialRegex = new RegExp(/(012|123|234|345|456|567|678|789|987|876|765|654|543|432|321|210)/, '');
-        this.repeatingRegex = new RegExp(/(000|111|222|333|444|555|666|777|888|999)/, '');
+        this.sequentialNumbersRegex = this.createSequentialNumbersRegex();
+        this.repeatingNumbersRegex = this.createRepeatedNumbersRegex();
         this.numbersOnlyRegex = new RegExp(/\D/, '');
-    }
+    };
 
     toolTip() {
         return "PINs should be 8-32 characters long, not have 3 repeated numbers, or 3 sequential numbers";
@@ -19,10 +20,10 @@ class PinValidator extends Validator {
     validate(element: string): Promise<boolean> {
         let errors: any[] = [];
 
-        if (this.sequentialRegex.test(element)) {
+        if (this.sequentialNumbersRegex.test(element)) {
             errors.push('PIN cannot contain 3 sequential numbers, like 123');
         };
-        if (this.repeatingRegex.test(element)) {
+        if (this.repeatingNumbersRegex.test(element)) {
             errors.push('PIN cannot contain 3 repeating numbers, like 111');
         };
         if (this.numbersOnlyRegex.test(element)) {
@@ -37,11 +38,39 @@ class PinValidator extends Validator {
                 reject({
                     originalElement: element,
                     errors: errors
-                })
+                });
             } else {
-                resolve(true)
+                resolve(true);
             }
         })
+    };
+
+    createRepeatedNumbersRegex() {
+        let repeatedNumArr = [];
+
+        for (let i = 0; i < numbers.length; i++) {
+            repeatedNumArr.push(numbers[i] + numbers[i] + numbers[i]);
+        };
+
+        return new RegExp("(" + repeatedNumArr.join('|') + ")", "i");
+    };
+
+    createSequentialNumbersRegex() {
+        let sequentialNumbersArray = [];
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (i == 0 || i == numbers.length - 1) { continue }
+            sequentialNumbersArray.push(numbers[i - 1] + numbers[i] + numbers[i + 1])
+        }
+
+        numbers.reverse()
+
+        for (let i = 0; i < numbers.length; i++) {
+            if (i == 0 || i == numbers.length - 1) { continue }
+            sequentialNumbersArray.push(numbers[i - 1] + numbers[i] + numbers[i + 1])
+        }
+
+        return new RegExp("(" + sequentialNumbersArray.join('|') + ")", "i");
     };
 };
 

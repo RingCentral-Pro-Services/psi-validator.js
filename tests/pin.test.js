@@ -27,9 +27,17 @@ test('repeating pin fails', async () => {
     expect(result).toHaveProperty('errors');
 });
 
-test('sequential pin fails', async () => {
+test('sequential ascending pin fails', async () => {
     let result = await validator
         .validate('012345')
+        .catch(e => { return e })
+
+    expect(result).toHaveProperty('errors');
+});
+
+test('sequential descending pin fails', async () => {
+    let result = await validator
+        .validate('543210')
         .catch(e => { return e })
 
     expect(result).toHaveProperty('errors');
