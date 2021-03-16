@@ -7,9 +7,9 @@ class PinValidator extends Validator {
 
     constructor() {
         super();
-        this.sequentialRegex = new RegExp(/[^012|123|234|345|456|567|678|789|987|876|765|654|543|432|321|210]/, 'gm');
-        this.repeatingRegex = new RegExp(/[^000|111|222|333|444|555|666|777|888|999]/, 'gm');
-        this.numbersOnlyRegex = new RegExp(/\D/, 'gm');
+        this.sequentialRegex = new RegExp(/(012|123|234|345|456|567|678|789|987|876|765|654|543|432|321|210)/, '');
+        this.repeatingRegex = new RegExp(/(000|111|222|333|444|555|666|777|888|999)/, '');
+        this.numbersOnlyRegex = new RegExp(/\D/, '');
     }
 
     toolTip() {
@@ -18,7 +18,6 @@ class PinValidator extends Validator {
 
     validate(element: string): Promise<boolean> {
         let errors: any[] = [];
-        element = element.toString();
 
         if (this.sequentialRegex.test(element)) {
             errors.push('PIN cannot contain 3 sequential numbers, like 123');

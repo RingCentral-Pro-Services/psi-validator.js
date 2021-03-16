@@ -1,4 +1,4 @@
-const Validator = require('../dist/validators/validator').default;
+const { Validator } = require('../dist/index');
 
 const validator = new Validator();
 
