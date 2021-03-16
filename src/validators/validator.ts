@@ -18,7 +18,7 @@ class Validator {
     validate(element: any): Promise<boolean> {
         return new Promise((resolve) => {
             resolve(true);
-        })
+        });
     };
 
     /**
@@ -40,7 +40,7 @@ class Validator {
 
         return new Promise((resolve) => {
             resolve(returnArray);
-        })
+        });
     };
 };
 

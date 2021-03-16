@@ -41,8 +41,8 @@ class PinValidator extends Validator {
                 });
             } else {
                 resolve(true);
-            }
-        })
+            };
+        });
     };
 
     createRepeatedNumbersRegex() {
@@ -59,16 +59,16 @@ class PinValidator extends Validator {
         let sequentialNumbersArray = [];
 
         for (let i = 0; i < numbers.length; i++) {
-            if (i == 0 || i == numbers.length - 1) { continue }
-            sequentialNumbersArray.push(numbers[i - 1] + numbers[i] + numbers[i + 1])
-        }
+            if (i == 0 || i == numbers.length - 1) { continue };
+            sequentialNumbersArray.push(numbers[i - 1] + numbers[i] + numbers[i + 1]);
+        };
 
-        numbers.reverse()
+        numbers.reverse();
 
         for (let i = 0; i < numbers.length; i++) {
-            if (i == 0 || i == numbers.length - 1) { continue }
-            sequentialNumbersArray.push(numbers[i - 1] + numbers[i] + numbers[i + 1])
-        }
+            if (i == 0 || i == numbers.length - 1) { continue };
+            sequentialNumbersArray.push(numbers[i - 1] + numbers[i] + numbers[i + 1]);
+        };
 
         return new RegExp("(" + sequentialNumbersArray.join('|') + ")", "i");
     };

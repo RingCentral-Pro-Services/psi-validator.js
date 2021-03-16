@@ -59,11 +59,11 @@ class PasswordValidator extends Validator {
                 reject({
                     originalElement: element,
                     errors: errors
-                })
+                });
             } else {
-                resolve(true)
-            }
-        })
+                resolve(true);
+            };
+        });
     };
 
     createRepeatedNumbersRegex() {
@@ -80,16 +80,16 @@ class PasswordValidator extends Validator {
         let sequentialNumbers = [];
 
         for (let i = 0; i < numbers.length; i++) {
-            if (i == 0 || i == numbers.length - 1) { continue }
-            sequentialNumbers.push(numbers[i - 1] + numbers[i] + numbers[i + 1])
-        }
+            if (i == 0 || i == numbers.length - 1) { continue };
+            sequentialNumbers.push(numbers[i - 1] + numbers[i] + numbers[i + 1]);
+        };
 
         numbers.reverse()
 
         for (let i = 0; i < numbers.length; i++) {
-            if (i == 0 || i == numbers.length - 1) { continue }
-            sequentialNumbers.push(numbers[i - 1] + numbers[i] + numbers[i + 1])
-        }
+            if (i == 0 || i == numbers.length - 1) { continue };
+            sequentialNumbers.push(numbers[i - 1] + numbers[i] + numbers[i + 1]);
+        };
 
         return new RegExp("(" + sequentialNumbers.join('|') + ")", "i");
     };
@@ -108,16 +108,16 @@ class PasswordValidator extends Validator {
         let sequentialLettersArray = [];
 
         for (let i = 0; i < alphabet.length; i++) {
-            if (i == 0 || i == alphabet.length - 1) { continue }
-            sequentialLettersArray.push(alphabet[i - 1] + alphabet[i] + alphabet[i + 1])
-        }
+            if (i == 0 || i == alphabet.length - 1) { continue };
+            sequentialLettersArray.push(alphabet[i - 1] + alphabet[i] + alphabet[i + 1]);
+        };
 
         numbers.reverse()
 
         for (let i = 0; i < alphabet.length; i++) {
-            if (i == 0 || i == alphabet.length - 1) { continue }
-            sequentialLettersArray.push(alphabet[i - 1] + alphabet[i] + alphabet[i + 1])
-        }
+            if (i == 0 || i == alphabet.length - 1) { continue };
+            sequentialLettersArray.push(alphabet[i - 1] + alphabet[i] + alphabet[i + 1]);
+        };
 
         return new RegExp("(" + sequentialLettersArray.join('|') + ")", "i");
     };

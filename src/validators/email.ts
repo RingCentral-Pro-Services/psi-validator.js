@@ -30,11 +30,11 @@ class EmailValidator extends Validator {
                 reject({
                     originalElement: element,
                     errors: errors
-                })
+                });
             } else {
-                resolve(true)
-            }
-        })
+                resolve(true);
+            };
+        });
     };
 
     /**
