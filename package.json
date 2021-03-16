@@ -1,0 +1,17 @@
+{
+  "name": "psi-validator",
+  "version": "0.0.1",
+  "description": "This will provide a validator class for many different RC API endpoints",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "jest --collectCoverage"
+  },
+  "author": "John Celoria <jceloria@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node14": "^1.0.0",
+    "@types/jest": "^26.0.20",
+    "jest": "^26.6.3"
+  }
+}
