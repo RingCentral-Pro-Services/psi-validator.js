@@ -1,6 +1,11 @@
 import Validator from './validator';
 import numbers from '../lib/numbers';
 
+/**
+ * RingCentral IVRPin. This is generally used for checking voicemail from a physical device endpoint. 
+ * 
+ * https://support.ringcentral.com/article/5766.html
+ */
 class PinValidator extends Validator {
     sequentialNumbersRegex;
     repeatingNumbersRegex;
@@ -14,7 +19,7 @@ class PinValidator extends Validator {
     };
 
     toolTip() {
-        return "PINs should be 8-32 characters long, not have 3 repeated numbers, or 3 sequential numbers";
+        return "PINs should be 6-10 characters long, not have 3 repeated numbers, or 3 sequential numbers";
     };
 
     validate(element: string): Promise<boolean> {

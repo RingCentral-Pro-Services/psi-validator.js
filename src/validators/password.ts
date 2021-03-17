@@ -2,6 +2,11 @@ import Validator from './validator';
 import numbers from '../lib/numbers';
 import alphabet from '../lib/alphabet';
 
+/**
+ * RingCentral password. Used to log into any RC software or the web interface. Not needed if a customer account enforces SSO.
+ * 
+ * https://support.ringcentral.com/article/5766.html
+ */
 class PasswordValidator extends Validator {
     atLeastOneLetterRegex;
     atLeastOneNumberRegex;
