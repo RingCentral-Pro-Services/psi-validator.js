@@ -1,5 +1,5 @@
 import Validator from './validator';
-import topLevelDomains from '../lib/top-level-domains'
+import topLevelDomains from '../lib/top-level-domains';
 
 /**
  * RingCentral requires valid email addresses for nearly all extension types. Here, we enforce good email form and top level domains.
@@ -12,14 +12,14 @@ class EmailValidator extends Validator {
         super();
         this.tldExactMatchRegex = this.setTldExactMatchRegex();
         this.wellFormedRegex = new RegExp(/\w+\@\w+\.\w+/, 'i');
-    }
+    };
 
     toolTip() {
         return "TODO: Email Tooltip";
     };
 
     validate(element: string): Promise<boolean> {
-        let errors: any[] = []
+        let errors: any[] = [];
 
         if (!this.tldExactMatchRegex.test(element)) {
             errors.push("Emails require a valid top level domain");

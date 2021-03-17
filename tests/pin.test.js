@@ -22,7 +22,7 @@ test('validateMany', async () => {
 test('repeating pin fails', async () => {
     let result = await validator
         .validate('111222')
-        .catch(e => { return e })
+        .catch(e => { return e });
 
     expect(result).toHaveProperty('errors');
 });
@@ -30,7 +30,7 @@ test('repeating pin fails', async () => {
 test('sequential ascending pin fails', async () => {
     let result = await validator
         .validate('012345')
-        .catch(e => { return e })
+        .catch(e => { return e });
 
     expect(result).toHaveProperty('errors');
 });
@@ -38,7 +38,7 @@ test('sequential ascending pin fails', async () => {
 test('sequential descending pin fails', async () => {
     let result = await validator
         .validate('543210')
-        .catch(e => { return e })
+        .catch(e => { return e });
 
     expect(result).toHaveProperty('errors');
 });
@@ -46,7 +46,7 @@ test('sequential descending pin fails', async () => {
 test('short pin fails', async () => {
     let result = await validator
         .validate('0102')
-        .catch(e => { return e })
+        .catch(e => { return e });
 
     expect(result).toHaveProperty('errors');
 });
@@ -54,7 +54,7 @@ test('short pin fails', async () => {
 test('long pin fails', async () => {
     let result = await validator
         .validate('0102030405050607080910203040506070708090')
-        .catch(e => { return e })
+        .catch(e => { return e });
 
     expect(result).toHaveProperty('errors');
 });
@@ -62,7 +62,7 @@ test('long pin fails', async () => {
 test('non digit pin fails', async () => {
     let result = await validator
         .validate('Hello world!')
-        .catch(e => { return e })
+        .catch(e => { return e });
 
     expect(result).toHaveProperty('errors');
 });

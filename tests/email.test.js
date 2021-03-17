@@ -22,7 +22,7 @@ test('validateMany', async () => {
 test('bad domain fails', async () => {
     let result = await validator
         .validate('john.celoria@ringcentral.comX')
-        .catch(e => { return e })
+        .catch(e => { return e });
 
     expect(result).toHaveProperty('errors');
 });
@@ -30,7 +30,7 @@ test('bad domain fails', async () => {
 test('badly formed fails', async () => {
     let result = await validator
         .validate('john.celoria!ringcentral.com')
-        .catch(e => { return e })
+        .catch(e => { return e });
 
     expect(result).toHaveProperty('errors');
 });
