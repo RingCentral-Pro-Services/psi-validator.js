@@ -34,3 +34,11 @@ test('badly formed fails', async () => {
 
     expect(result).toHaveProperty('errors');
 });
+
+test('badly formed and bad domain fails', async () => {
+    let result = await validator
+        .validate('john.celoria!ringcentral.comX')
+        .catch(e => { return e });
+
+    expect(result).toHaveProperty('errors');
+});
