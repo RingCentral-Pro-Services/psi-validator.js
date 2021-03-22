@@ -43,7 +43,7 @@ class LimitedExtensionValidator extends Validator {
 
             if (contactResponse !== true) {
                 errors.push({
-                    ivrPin: contactResponse
+                    contact: contactResponse
                 });
             };
         };
