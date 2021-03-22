@@ -16,9 +16,10 @@ class Validator {
      * Validate an individual item. Return true, or information about a failed validation
      * 
      * @param element Element that we are validating
+     * @param method Optional, in case there are differences in required fields based on request method
      * @returns true, or rejection that includes the original element, and an array of errors for it
      */
-    validate(element: any): Promise<boolean> {
+    validate(element: any, method?: 'post' | 'put' | 'get' | 'delete'): Promise<boolean> {
         return new Promise((resolve) => {
             resolve(true);
         });
