@@ -43,6 +43,18 @@ test('bad domain fails', async () => {
     expect(result).toHaveProperty('errors');
 });
 
+test('no first name fails', async () => {
+    let contactBody = {
+        email: "john.celoria@ringcentral.com"
+    }
+
+    let result = await validator
+        .validate(contactBody)
+        .catch(e => { return e });
+
+    expect(result).toHaveProperty('errors');
+});
+
 test('last name fails', async () => {
     let contactBody = {
         firstName: "John",

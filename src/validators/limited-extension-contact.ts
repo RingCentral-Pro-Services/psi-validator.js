@@ -23,6 +23,12 @@ class LimitedExtensionContactValidator extends Validator {
             errors.push(`Request is not an object, you sent ${typeof (element)}`);
         };
 
+        if (element && !element.firstName) {
+            errors.push({
+                firstName: `Limited Extensions require a first name`
+            });
+        };
+
         if (element && element.lastName) {
             errors.push({
                 lastName: `Limited Extensions can't have a last name`
