@@ -6,7 +6,16 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "jest",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RingCentral-Pro-Services/psi-validator.js.git"
+  },
+  "homepage": "https://github.com/RingCentral-Pro-Services/psi-validator.js",
+  "bugs": {
+    "url": "https://github.com/RingCentral-Pro-Services/psi-validator.js/issues"
   },
   "author": "John Celoria <jceloria@gmail.com>",
   "license": "ISC",
