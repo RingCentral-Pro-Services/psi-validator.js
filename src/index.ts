@@ -4,6 +4,7 @@ import PinValidator from './validators/pin';
 import PasswordValidator from './validators/password';
 import LimitedExtensionContactValidator from './validators/limited-extension-contact';
 import LimitedExtensionValidator from './validators/limited-extension';
+import NumberValidator from './validators/number';
 
 export = {
     Validator,
@@ -11,5 +12,6 @@ export = {
     PinValidator,
     PasswordValidator,
     LimitedExtensionContactValidator,
-    LimitedExtensionValidator
+    LimitedExtensionValidator,
+    NumberValidator
 };
