@@ -40,7 +40,7 @@ class Validator {
                     returnArray.push(res);
                 })
                 .catch(e => {
-                    returnArray.push(e)
+                    returnArray.push(e);
                 });
         };
 
