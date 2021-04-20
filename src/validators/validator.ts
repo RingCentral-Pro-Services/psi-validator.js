@@ -38,7 +38,10 @@ class Validator {
             await this.validate(element)
                 .then(res => {
                     returnArray.push(res);
-                });
+                })
+                .catch(e => {
+                    returnArray.push(e)
+                })
         };
 
         return new Promise((resolve) => {
