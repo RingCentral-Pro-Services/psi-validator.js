@@ -41,7 +41,7 @@ class Validator {
                 })
                 .catch(e => {
                     returnArray.push(e)
-                })
+                });
         };
 
         return new Promise((resolve) => {
