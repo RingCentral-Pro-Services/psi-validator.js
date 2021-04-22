@@ -44,7 +44,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "git reset config.js;git checkout config.js;pretty-quick --staged"
+      "pre-commit": "pretty-quick --staged"
     }
   },
   "jest": {
