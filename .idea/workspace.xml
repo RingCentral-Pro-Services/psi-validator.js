@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="806c9dfc-0edb-44e4-bd2d-5156dd6a2f03" name="Changes" comment="package updates">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/tests.js.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/tests.js.yml" afterDir="false" />
+    <list default="true" id="806c9dfc-0edb-44e4-bd2d-5156dd6a2f03" name="Changes" comment="updating tests for node v16">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -35,7 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1627417210551</updated>
       <workItem from="1627417211319" duration="35000" />
-      <workItem from="1632173536508" duration="156000" />
+      <workItem from="1632173536508" duration="510000" />
     </task>
     <task id="LOCAL-00001" summary="package updates">
       <created>1632173654985</created>
@@ -44,7 +53,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632173654985</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="updating tests for node v16">
+      <created>1632173715759</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1632173715760</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -63,6 +79,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="package updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="package updates" />
+    <MESSAGE value="updating tests for node v16" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating tests for node v16" />
   </component>
 </project>
