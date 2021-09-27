@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="806c9dfc-0edb-44e4-bd2d-5156dd6a2f03" name="Changes" comment="updating tests for node v16">
+    <list default="true" id="806c9dfc-0edb-44e4-bd2d-5156dd6a2f03" name="Changes" comment="package updates">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/sandbox.js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -44,7 +45,8 @@
       <option name="presentableId" value="Default" />
       <updated>1627417210551</updated>
       <workItem from="1627417211319" duration="35000" />
-      <workItem from="1632173536508" duration="510000" />
+      <workItem from="1632173536508" duration="4506000" />
+      <workItem from="1632754752197" duration="878000" />
     </task>
     <task id="LOCAL-00001" summary="package updates">
       <created>1632173654985</created>
@@ -60,7 +62,14 @@
       <option name="project" value="LOCAL" />
       <updated>1632173715760</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="package updates">
+      <created>1632351186719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1632351186719</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -76,10 +85,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="package updates" />
     <MESSAGE value="updating tests for node v16" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating tests for node v16" />
+    <MESSAGE value="package updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="package updates" />
   </component>
 </project>
