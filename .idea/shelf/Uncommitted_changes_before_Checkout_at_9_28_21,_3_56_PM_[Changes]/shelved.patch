@@ -1,0 +1,28 @@
+Index: package-lock.json
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/package-lock.json b/package-lock.json
+--- a/package-lock.json	(revision bf2965a0f7ab6de825384a6dbe5a77494f905d02)
++++ b/package-lock.json	(date 1632858555207)
+@@ -16460,7 +16460,7 @@
+     },
+     "node_modules/psi-validator": {
+       "version": "0.0.1-alpha",
+-      "resolved": "git+ssh://git@github.com/RingCentral-Pro-Services/psi-validator.js.git#913fc51b555f86cbfe0fe98bea67853974b94ab9",
++      "resolved": "git+ssh://git@github.com/RingCentral-Pro-Services/psi-validator.js.git#fb9784829ff847941acda9f2529ca348659b5f46",
+       "license": "ISC"
+     },
+     "node_modules/psl": {
+@@ -34669,8 +34669,8 @@
+       "integrity": "sha1-0/wRS6BplaRexok/SEzrHXj19HY="
+     },
+     "psi-validator": {
+-      "version": "git+ssh://git@github.com/RingCentral-Pro-Services/psi-validator.js.git#913fc51b555f86cbfe0fe98bea67853974b94ab9",
+-      "from": "psi-validator@github:RingCentral-Pro-Services/psi-validator.js"
++      "version": "git+ssh://git@github.com/RingCentral-Pro-Services/psi-validator.js.git#fb9784829ff847941acda9f2529ca348659b5f46",
++      "from": "psi-validator@https://github.com/RingCentral-Pro-Services/psi-validator.js.git"
+     },
+     "psl": {
+       "version": "1.8.0",

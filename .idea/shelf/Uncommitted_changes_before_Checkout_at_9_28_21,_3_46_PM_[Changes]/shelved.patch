@@ -1,0 +1,21 @@
+Index: src/components/emailValidator.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import {Container, Input} from 'semantic-ui-react';\nimport {EmailValidator} from 'psi-validator';\nimport React, { useState } from 'react';\n\nfunction EmailValidatorComponent() {\n  const [validatorResponse, setValidatorResponse] = useState(true);\n\n  const validator = new EmailValidator();\n\n  return (\n    <Container>\n      <Input\n        label={\"Email Address\"}\n        placeHolder={\"Email Address\"}\n        onChange={(e, d) => {\n          validator\n            .validate(d.value)\n            .then(res =>{\n              setValidatorResponse(res)\n            })\n            .catch(err =>{\n              setValidatorResponse(err.errors)\n            })\n        }}\n      />\n\n      <p>{validatorResponse === true ? 'true' : validatorResponse.join(\"; \")}</p>\n\n    </Container>\n  );\n}\n\nexport default EmailValidatorComponent;
+===================================================================
+diff --git a/src/components/emailValidator.js b/src/components/emailValidator.js
+--- a/src/components/emailValidator.js	
++++ b/src/components/emailValidator.js	
+@@ -16,10 +16,10 @@
+           validator
+             .validate(d.value)
+             .then(res =>{
+-              setValidatorResponse(res)
++              setValidatorResponse(res) // this will always be a boolean 'true'
+             })
+             .catch(err =>{
+-              setValidatorResponse(err.errors)
++              setValidatorResponse(err.errors) // errors will be an array of all the things that went wrong
+             })
+         }}
+       />
