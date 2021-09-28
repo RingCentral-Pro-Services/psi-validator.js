@@ -3,6 +3,9 @@ RingCentral Professional Services Innovation team (PSi) needs to be able to veri
 This information all needs to be validated exactly per RC requirements. These requirements easily vary by endpoint and 
 HTTP method, and aren't discernible from the RC OpenAPI documentation.
 
+### Demo
+https://ringcentral-pro-services.github.io/psi-validator.js/
+
 # Example Usage
 After importing the library, try out the following code
 
