@@ -66,5 +66,4 @@ true
     'Email format not valid. Should be {something}@{something}.{top level domain}'
   ]
 }
-
 ```
