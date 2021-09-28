@@ -7,13 +7,14 @@ HTTP method, and aren't discernible from the RC OpenAPI documentation.
 After importing the library, try out the following code
 
 ```js
-const { EmailValidator } = require('./dist/index'); // running this locally
+const { EmailValidator } = require('./dist/index');
 
 const validator = new EmailValidator();
 
 async function main() {
   let goodEmail = 'john.celoria@ringcentral.com'
-  let badEmail = 'john.celoria@ringcentral.someBadSuffix'
+  let badEmail = 'john.celoria@ringcentral.someBadTld'
+  let evenWorseEmail = 'john.celoria2ringcentral.someBadTld'
 
   await validator
     .validate(goodEmail)
@@ -26,6 +27,15 @@ async function main() {
 
   await validator
     .validate(badEmail)
+    .then(res =>{
+      console.log(res);
+    })
+    .catch(e =>{
+      console.error(e);
+    });
+
+  await validator
+    .validate(evenWorseEmail)
     .then(res =>{
       console.log(res);
     })
@@ -46,5 +56,12 @@ true
   originalElement: 'john.celoria@ringcentral.someBadTld',
   errors: [ 'Emails require a valid top level domain' ]
 }
-john.celoria@LM1ARMD6R psi-validator.js % 
+{
+  originalElement: 'john.celoria2ringcentral.someBadTld',
+  errors: [
+    'Emails require a valid top level domain',
+    'Email format not valid. Should be {something}@{something}.{top level domain}'
+  ]
+}
+
 ```
