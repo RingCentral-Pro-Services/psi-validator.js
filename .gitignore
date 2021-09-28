@@ -3,4 +3,4 @@ node_modules
 build
 dist
 coverage
-#sandbox.js
+.idea

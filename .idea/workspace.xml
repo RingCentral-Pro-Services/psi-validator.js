@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="806c9dfc-0edb-44e4-bd2d-5156dd6a2f03" name="Changes" comment="adding to readme and sandbox example file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sandbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/sandbox.js" afterDir="false" />
+    <list default="true" id="806c9dfc-0edb-44e4-bd2d-5156dd6a2f03" name="Changes" comment="updated readme and sandbox">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
