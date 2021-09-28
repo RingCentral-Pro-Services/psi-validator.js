@@ -76,6 +76,7 @@ const topLevelDomains = [
     ".dog",
     ".domains",
     ".education",
+    ".edu",
     ".email",
     ".energy",
     ".engineering",
