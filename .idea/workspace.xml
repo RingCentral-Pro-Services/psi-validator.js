@@ -4,47 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="806c9dfc-0edb-44e4-bd2d-5156dd6a2f03" name="Changes" comment="package updates">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_21,_3_22_PM_[Changes]/shelved.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_9_28_21__3_22_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="806c9dfc-0edb-44e4-bd2d-5156dd6a2f03" name="Changes" comment="readme update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo192.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/manifest.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.bad41965.chunk.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/css/2.bad41965.chunk.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.92c1c6c8.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.92c1c6c8.chunk.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/2.92c1c6c8.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/3.00b9210f.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/3.00b9210f.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.926490ea.chunk.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.926490ea.chunk.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.6f93ddf8.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/runtime-main.6f93ddf8.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/brand-icons.278156e4.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/brand-icons.65a2fb6d.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/brand-icons.6729d297.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/brand-icons.cac87dc0.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/brand-icons.d68fa3e6.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/flags.99f63ae7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/icons.38c6d8ba.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/icons.425399f8.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/icons.62d9dae4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/icons.a01e3f2d.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/icons.c656b8ca.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/outline-icons.53671035.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/outline-icons.687a4990.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/outline-icons.752905fa.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/outline-icons.9c4845b4.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/media/outline-icons.ddae9b1b.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,22 +20,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
-  <component name="GithubProjectSettings">
-    <option name="branchProtectionPatterns">
-      <list>
-        <option value="main" />
-      </list>
-    </option>
   </component>
   <component name="ProjectId" id="1vug5iZVqEPxEhKUaB1jiyeLoMj" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -84,20 +30,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="$PROJECT_DIR$/sandbox.js" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -111,8 +53,6 @@
       <workItem from="1627417211319" duration="35000" />
       <workItem from="1632173536508" duration="4506000" />
       <workItem from="1632754752197" duration="2189000" />
-      <workItem from="1632853898062" duration="2020000" />
-      <workItem from="1632857064359" duration="206000" />
     </task>
     <task id="LOCAL-00001" summary="package updates">
       <created>1632173654985</created>
@@ -142,28 +82,7 @@
       <option name="project" value="LOCAL" />
       <updated>1632757288603</updated>
     </task>
-    <task id="LOCAL-00005" summary="Updated gitignore">
-      <created>1632851562619</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1632851562619</updated>
-    </task>
-    <task id="LOCAL-00006" summary="first gh-pages push">
-      <created>1632854836578</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1632854836578</updated>
-    </task>
-    <task id="LOCAL-00007" summary="package updates">
-      <created>1632855265519</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1632855265519</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,12 +101,9 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="updating tests for node v16" />
-    <MESSAGE value="adding to readme and sandbox example file" />
-    <MESSAGE value="Updated gitignore" />
-    <MESSAGE value="first gh-pages push" />
     <MESSAGE value="package updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="package updates" />
+    <MESSAGE value="adding to readme and sandbox example file" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding to readme and sandbox example file" />
   </component>
 </project>
