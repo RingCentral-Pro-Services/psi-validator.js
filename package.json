@@ -1,6 +1,6 @@
 {
   "name": "psi-validator",
-  "version": "0.0.2-alpha",
+  "version": "0.0.3-alpha",
   "description": "This will provide a validator class for many different RC API endpoints",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
