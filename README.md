@@ -17,14 +17,14 @@ or
 $ yarn add psi-validator
 ```
 
-The require or import a validator into your app for use
+Then require or import a validator into your app for use
 
 ```javascript
-const { EmailValidator } = require('./dist/index');
+const { EmailValidator } = require('psi-validator');
 ```
 or
 ```javascript
-import { EmailValidator } from './dist/index';
+import { EmailValidator } from 'psi-validator';
 ```
 
 Finally, for each imported validator, create an instance of the class for use
