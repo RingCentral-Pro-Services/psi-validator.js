@@ -6,14 +6,37 @@ HTTP method, and aren't discernible from the RC OpenAPI documentation.
 ### Demo
 https://ringcentral-pro-services.github.io/psi-validator.js/
 
-# Example Usage
+## Installation
+To use this in your app, install with `npm` or `yarn`. 
+
+```shell
+$ npm i psi-validator
+```
+or
+```shell
+$ yarn add psi-validator
+```
+
+The require or import a validator into your app for use
+
+```javascript
+const { EmailValidator } = require('./dist/index');
+```
+or
+```javascript
+import { EmailValidator } from './dist/index';
+```
+
+Finally, for each imported validator, create an instance of the class for use
+
+```javascript
+const validator = new EmailValidator();
+```
+
+## Example Usage
 After importing the library, try out the following code
 
 ```js
-const { EmailValidator } = require('./dist/index');
-
-const validator = new EmailValidator();
-
 async function main() {
   let goodEmail = 'john.celoria@ringcentral.com'
   let badEmail = 'john.celoria@ringcentral.someBadTld'
