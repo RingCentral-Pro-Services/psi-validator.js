@@ -27,10 +27,6 @@ class PasswordValidator extends Validator {
         this.repeatingLettersRegex = this.createRepeatedLettersRegex();
     };
 
-    toolTip() {
-        return "Passwords require an upper case, lower case, number, and special character";
-    };
-
     validate(element: string): Promise<boolean> {
         let errors: any[] = [];
 

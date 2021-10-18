@@ -13,13 +13,6 @@ class NumberValidator extends Validator {
     };
 
     /**
-     * Tool tip that will be used for web interfaces
-     */
-    toolTip() {
-        return "Checks if number";
-    };
-
-    /**
      * Validate an individual item. Return true, or information about a failed validation
      * 
      * @param element Element that we are validating

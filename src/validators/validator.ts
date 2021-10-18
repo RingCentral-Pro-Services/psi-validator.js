@@ -6,13 +6,6 @@ class Validator {
     constructor() { };
 
     /**
-     * Tool tip that will be used for web interfaces
-     */
-    toolTip() {
-        return "Tool Tip text for use on websites";
-    };
-
-    /**
      * Validate an individual item. Return true, or information about a failed validation
      * 
      * @param element Element that we are validating

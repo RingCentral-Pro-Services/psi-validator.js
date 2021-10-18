@@ -2,10 +2,6 @@ const { EmailValidator } = require('../dist/index');
 
 const validator = new EmailValidator();
 
-test('email toolTip', () => {
-    expect(validator.toolTip()).toBeDefined();
-});
-
 test('email validate', async () => {
     expect(await validator.validate('john.celoria@ringcentral.com')).toBe(true);
 });

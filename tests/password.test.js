@@ -2,10 +2,6 @@ const { PasswordValidator } = require('../dist/index');
 
 const validator = new PasswordValidator();
 
-test('password toolTip', () => {
-    expect(validator.toolTip()).toBeDefined();
-});
-
 test('passowrd validate', async () => {
     expect(await validator.validate('P@ssw0rd')).toBe(true);
 });

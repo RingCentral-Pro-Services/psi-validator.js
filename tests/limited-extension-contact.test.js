@@ -2,10 +2,6 @@ const { LimitedExtensionContactValidator } = require('../dist/index');
 
 const validator = new LimitedExtensionContactValidator();
 
-test('LE Contact toolTip', () => {
-    expect(validator.toolTip()).toBeDefined();
-});
-
 test('LE Contact validates', async () => {
     let contactBody = {
         firstName: "John Celoria",

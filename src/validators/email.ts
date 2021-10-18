@@ -14,10 +14,6 @@ class EmailValidator extends Validator {
         this.wellFormedRegex = new RegExp(/\w+\@\w+\.\w+/, 'i');
     };
 
-    toolTip() {
-        return "TODO: Email Tooltip";
-    };
-
     validate(element: string): Promise<boolean> {
         let errors: any[] = [];
 
