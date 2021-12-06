@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/RingCentral-Pro-Services/psi-validator.js/actions/workflows/tests.js.yml/badge.svg)](https://github.com/RingCentral-Pro-Services/psi-validator.js/actions/workflows/tests.js.yml)
+
 # About
 RingCentral Professional Services Innovation team (PSi) needs to be able to verify information in browser. 
 This information all needs to be validated exactly per RC requirements. These requirements easily vary by endpoint and 
