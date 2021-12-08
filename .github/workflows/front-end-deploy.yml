@@ -25,4 +25,7 @@ jobs:
       - run: git config user.name "Brutalbeard"
       - run: git config user.email "jceloria@gmail.com"
       - run: npm run predeploy
+      - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
       - run: npm run deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
