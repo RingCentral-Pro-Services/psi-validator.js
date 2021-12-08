@@ -22,5 +22,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: npm install
+      - run: git config user.name "Brutalbeard"
+      - run: git config user.email "john.celoria@ringcentral.com"
       - run: npm run predeploy
       - run: npm run deploy
