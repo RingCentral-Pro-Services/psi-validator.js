@@ -2,10 +2,6 @@ const { PinValidator } = require('../dist/index');
 
 const validator = new PinValidator();
 
-test('pin toolTip', () => {
-    expect(validator.toolTip()).toBeDefined();
-});
-
 test('pin validate', async () => {
     expect(await validator.validate('010203')).toBe(true);
 });

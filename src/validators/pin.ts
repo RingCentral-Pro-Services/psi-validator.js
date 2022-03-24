@@ -18,10 +18,6 @@ class PinValidator extends Validator {
         this.numbersOnlyRegex = new RegExp(/\D/, '');
     };
 
-    toolTip() {
-        return "PINs should be 6-10 characters long, not have 3 repeated numbers, or 3 sequential numbers";
-    };
-
     validate(element: string): Promise<boolean> {
         let errors: any[] = [];
 

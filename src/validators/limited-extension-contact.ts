@@ -12,10 +12,6 @@ class LimitedExtensionContactValidator extends Validator {
         super();
     };
 
-    toolTip() {
-        return "LE Contact Information";
-    };
-
     async validate(element: any): Promise<boolean> {
         let errors: any[] = [];
 

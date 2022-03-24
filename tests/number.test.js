@@ -2,10 +2,6 @@ const { NumberValidator } = require('../dist/index');
 
 const validator = new NumberValidator();
 
-test('number toolTip', () => {
-    expect(validator.toolTip()).toBeDefined();
-});
-
 test('number validate', async () => {
     expect(await validator.validate(123)).toBe(true);
 });

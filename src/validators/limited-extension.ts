@@ -16,10 +16,6 @@ class LimitedExtensionValidator extends Validator {
         super();
     };
 
-    toolTip() {
-        return "Limited Extension";
-    };
-
     async validate(element: any, method: 'post' | 'put'): Promise<boolean> {
         let errors: any[] = [];
 
