@@ -23,16 +23,16 @@ class PinValidator extends Validator {
 
         if (this.sequentialNumbersRegex.test(element)) {
             errors.push('PIN cannot contain 3 sequential numbers, like 123');
-        };
+        }
         if (this.repeatingNumbersRegex.test(element)) {
             errors.push('PIN cannot contain 3 repeating numbers, like 111');
-        };
+        }
         if (this.numbersOnlyRegex.test(element)) {
             errors.push('PINs can only contain numbers');
-        };
+        }
         if (element.length < 6 || element.length > 10) {
             errors.push('PIN length must be between 6 and 10 digits');
-        };
+        }
 
         return new Promise((resolve, reject) => {
             if (errors.length > 0) {
