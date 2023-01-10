@@ -25,7 +25,7 @@ class DnsValidator extends Validator {
         if (!this.wellFormedRegex.test(element)) {
             errors.push("Web address format not valid. Should be http(s)://{something}.{top level domain}");
         };
-        if (!this.ipAddressRegex.test(element)) {
+        if (this.ipAddressRegex.test(element)) {
             errors.push("IP addresses are prohibited. Should be http(s)://{something}.{top level domain}");
         };
 
