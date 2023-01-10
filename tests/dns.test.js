@@ -54,3 +54,11 @@ test('missing http(s)', async () => {
 
     expect(result).toHaveProperty('errors');
 });
+
+test('missing http(s) and bad domain', async () => {
+    let result = await validator
+        .validate('www.google.comX')
+        .catch(e => { return e });
+
+    expect(result).toHaveProperty('errors');
+});
