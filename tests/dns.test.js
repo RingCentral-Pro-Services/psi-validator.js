@@ -38,3 +38,11 @@ test('badly formed and bad domain fails', async () => {
 
     expect(result).toHaveProperty('errors');
 });
+
+test('ip address should fail', async () => {
+    let result = await validator
+        .validate('https://10.0.0.1')
+        .catch(e => { return e });
+
+    expect(result).toHaveProperty('errors');
+});
