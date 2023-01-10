@@ -46,3 +46,11 @@ test('ip address should fail', async () => {
 
     expect(result).toHaveProperty('errors');
 });
+
+test('missing http(s)', async () => {
+    let result = await validator
+        .validate('www.google.com')
+        .catch(e => { return e });
+
+    expect(result).toHaveProperty('errors');
+});
