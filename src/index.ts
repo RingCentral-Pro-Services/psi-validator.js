@@ -5,7 +5,7 @@ import PasswordValidator from './validators/password';
 import LimitedExtensionContactValidator from './validators/limited-extension-contact';
 import LimitedExtensionValidator from './validators/limited-extension';
 import NumberValidator from './validators/number';
-import UrlValidator from './validators/url';
+import DnsValidator from './validators/url';
 
 export = {
     Validator,
@@ -15,5 +15,5 @@ export = {
     LimitedExtensionContactValidator,
     LimitedExtensionValidator,
     NumberValidator,
-    UrlValidator
+    DnsValidator
 };
