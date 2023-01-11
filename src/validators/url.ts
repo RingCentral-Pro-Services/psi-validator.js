@@ -4,7 +4,7 @@ import topLevelDomains from '../lib/top-level-domains';
 /**
  * RingCentral requires valid email addresses for nearly all extension types. Here, we enforce good email form and top level domains.
  */
-class DnsValidator extends Validator {
+class UrlValidator extends Validator {
     tldExactMatchRegex;
     wellFormedRegex;
     ipAddressRegex;
@@ -49,4 +49,4 @@ class DnsValidator extends Validator {
     };
 };
 
-export default DnsValidator;
+export default UrlValidator;
