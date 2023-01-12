@@ -16,6 +16,6 @@ export = {
     LimitedExtensionContactValidator,
     LimitedExtensionValidator,
     NumberValidator,
-    DnsValidator
+    DnsValidator,
     StringValidator
 };
