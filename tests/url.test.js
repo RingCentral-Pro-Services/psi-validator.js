@@ -1,6 +1,6 @@
-const { DnsValidator } = require('../dist/index');
+const { UrlValidator } = require('../dist/index');
 
-const validator = new DnsValidator();
+const validator = new UrlValidator();
 
 test('dns validate', async () => {
     expect(await validator.validate('https://www.ringcentral.com')).toBe(true);
