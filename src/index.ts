@@ -7,6 +7,7 @@ import LimitedExtensionValidator from './validators/limited-extension';
 import NumberValidator from './validators/number';
 import UrlValidator from './validators/url';
 import StringValidator from './validators/string';
+import IpValidator from './validators/ip-address';
 
 export = {
     Validator,
@@ -17,5 +18,6 @@ export = {
     LimitedExtensionValidator,
     NumberValidator,
     UrlValidator,
-    StringValidator
+    StringValidator,
+    IpValidator
 };
