@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
+# sonarqube
+.scannerwork
+
 # Build happen on GH
 build
 
